@@ -13,6 +13,7 @@ export default function Landing() {
             alt="Nail Set 1"
             fill
             className="object-cover"
+            priority
           />
 
           {/* Black Overlay */}
@@ -35,12 +36,13 @@ export default function Landing() {
       {/* Tablet & Larger View (2 Images) */}
       <div className="hidden md:flex h-screen">
         {/* First Image */}
-        <div className="relative w-1/2">
+        <div className="relative w-1/2 h-full">
           <Image
             src="/nailset10.png"
             alt="Nail Set 10"
             fill
             className="object-cover"
+            priority
           />
 
           {/* Black Overlay */}
@@ -55,12 +57,13 @@ export default function Landing() {
         </div>
 
         {/* Second Image */}
-        <div className="relative w-1/2">
+        <div className="relative w-1/2 h-full">
           <Image
             src="/nailset9.png"
             alt="Nail Set 2"
             fill
             className="object-cover"
+            priority
           />
 
           {/* Black Overlay */}

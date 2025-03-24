@@ -6,53 +6,48 @@ export default function Landing() {
     <main>
       {/* Mobile View (Single Image with Overlay & Centered Text) */}
       <div className="block md:hidden">
-        <div className="relative">
+        <div className="relative w-full h-screen">
           {/* Image */}
           <Image
             src="/nailset10.png"
             alt="Nail Set 1"
-            width={500}
-            height={500}
-            layout="responsive"
-            objectFit="contain"
+            fill
+            className="object-cover"
           />
 
           {/* Black Overlay */}
-          <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
 
           {/* Centered Text */}
-          <div className="absolute inset-0 flex items-center justify-center text-center z-10">
+          <div className="absolute inset-0 flex items-center justify-center text-center">
             <div>
-              <h1 className="text-white text-2xl font-bold text-center pt-24  items-center justify-center ">
+              <h1 className="text-white text-2xl font-bold">
                 CERTIFIED + HOME BASED
               </h1>
-              <h1 className="text-white text-2xl font-bold text-center  items-center justify-center ">
+              <h1 className="text-white text-2xl font-bold">
                 YYC
               </h1>
-
             </div>
           </div>
         </div>
       </div>
 
       {/* Tablet & Larger View (2 Images) */}
-      <div className="hidden md:flex">
+      <div className="hidden md:flex h-screen">
         {/* First Image */}
         <div className="relative w-1/2">
           <Image
             src="/nailset10.png"
-            alt="Nail Set 1"
-            width={500}
-            height={500}
-            layout="responsive"
-            objectFit="contain"
+            alt="Nail Set 10"
+            fill
+            className="object-cover"
           />
 
           {/* Black Overlay */}
-          <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
+          <div className="absolute inset-0 bg-black opacity-80"></div>
 
           {/* Centered Text */}
-          <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-white text-2xl font-bold text-center">
               Luxury Nails
             </h1>
@@ -64,17 +59,15 @@ export default function Landing() {
           <Image
             src="/nailset9.png"
             alt="Nail Set 2"
-            width={500}
-            height={500}
-            layout="responsive"
-            objectFit="contain"
+            fill
+            className="object-cover"
           />
 
           {/* Black Overlay */}
-          <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
 
           {/* Centered Text */}
-          <div className="absolute inset-0 flex items-center justify-center z-10">
+          <div className="absolute inset-0 flex items-center justify-center">
             <h1 className="text-white text-2xl font-bold text-center">
               Elegant Styles
             </h1>

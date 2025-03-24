@@ -1,38 +1,23 @@
 import Image from 'next/image'
 import Header from './components/header';
 import Landing from './components/landing';
+import Carousel from './components/carousel';
 export default function Home() {
   return (
     <main
       className="min-h-screen"
       style={
-        { backgroundColor: "#FFC1EF",
+        { backgroundColor: "#FFE2F8",
          fontFamily: "var(--font-cormorant-garamond)" }
             } // Light Cream
     >
       <Header />
       <Landing/>
-      <div
-        className="p-8 rounded-2xl shadow-lg text-center"
-        style={{ backgroundColor: "#FDFDFD", color: "#333333" }} // Warm White surface & Charcoal Gray text
-      >
-        <h1 className="text-3xl font-bold mb-4" style={{ }}>
-          Welcome to Our Salon & Bakery
-        </h1>
-        <p className="text-lg mb-6" style={{ color: "#666666" }}> 
-          Indulge in beauty and sweetness all in one place.
-        </p>
-        <button
-          className="px-6 py-3 rounded-lg font-semibold transition-all bg-[#FF647F] text-[#FDFDFD] border-2 border-[#E8D5C4] hover:bg-[#FF93AC]"
-        >
-          Book an Appointment
-        </button>
-        <Image
-      src="/nailset4-removebg-preview.png"
-      width={200}
-      height={200}
-      alt="Picture of the author"
-    />
+      <div>
+        {/* <Carousel/> */}
+        Hi
+        
+
       </div>
     </main>
   );

@@ -9,8 +9,8 @@ export default function Landing() {
         <div className="relative w-full h-screen">
           {/* Image */}
           <Image
-            src="/nailset10.png"
-            alt="Nail Set 1"
+            src="/nailset10.PNG"
+            alt="Nail Set 10"
             fill
             className="object-cover"
             priority

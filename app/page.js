@@ -14,7 +14,7 @@ export default function Home() {
     >
       <Header />
       <Landing/>
-      <div className='bg-[#F2D3DE]'>
+      <div className='bg-[#F2D3DE] pb-20'>
         {/* <Carousel/> */}
         <Carousel/>
       </div>

@@ -26,9 +26,9 @@ export default function Carousel() {
     {
       const screenWidth = window.innerWidth;
       if (screenWidth < 640) {
-        setConstraint(-200 * (images.length - 2)); // Smaller constraint for mobile
+        setConstraint(-400 * (images.length - 1)); // Smaller constraint for mobile
       } else {
-        setConstraint(-350 * (images.length - 4)); // Larger constraint for desktop
+        setConstraint(-350 * (images.length - 1)); // Larger constraint for desktop
       }
     };
     updateConstraint();
@@ -66,20 +66,21 @@ export default function Carousel() {
         className="flex gap-4 w-screen  " 
         ref={carouselRef}
         drag="x"
-        dragConstraints={{ left: -285 * (images.length -1), right: 50 }}
+        // dragConstraints={{ left: -420 * (images.length -1), right: 0 }}
+        dragConstraints={{ left: constraint, right: 0 }}
       >
         {images.map((src, index) => (
-          <motion.div key={index} className="flex-none w-2/3 lg:w-min  cursor-pointer" whileTap={{ scale: 0.95 }}>
+          <motion.div key={index} className="flex-none w-11/12 lg:w-min  cursor-pointer" whileTap={{ scale: 0.95 }}>
             <div
 
 
-            className='w-full h-64 lg:h-128 lg:w-128 relative overflow-hidden my-4 ' //my-4 if you change this val change the transform value for the buttons since they effect one another
+            className='w-full h-128 lg:h-128 lg:w-128 relative overflow-hidden my-4 ' //my-4 if you change this val change the transform value for the buttons since they effect one another
             >
               <Image
                 src={src}
                 alt="carousel image"
                 height={0}
-                width={400}
+                width={600}
                 //  layout="fill"
                 className="bg-cover object-cover w-full h-full"
                 onClick={() => setSelectedImg(src)}

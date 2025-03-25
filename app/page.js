@@ -8,7 +8,7 @@ export default function Home() {
     <main
       className="min-h-screen"
       style={
-        { backgroundColor: "#F2D3DE",
+        { backgroundColor: "#ffebfa",
          fontFamily: "var(--font-cormorant-garamond)" }
             } // Light Cream
     >

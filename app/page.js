@@ -2,22 +2,24 @@ import Image from 'next/image'
 import Header from './components/header';
 import Landing from './components/landing';
 import Carousel from './components/carousel';
+import Services from './components/services';
 export default function Home() {
   return (
     <main
       className="min-h-screen"
       style={
-        { backgroundColor: "#FFE2F8",
+        { backgroundColor: "#F2D3DE",
          fontFamily: "var(--font-cormorant-garamond)" }
             } // Light Cream
     >
       <Header />
       <Landing/>
-      <div>
+      <div className='bg-[#F2D3DE]'>
         {/* <Carousel/> */}
-        Hi
-        
-
+        <Carousel/>
+      </div>
+      <div>
+        {/* <Services/> */}
       </div>
     </main>
   );

@@ -8,7 +8,7 @@ const cormorantGaramond = Cormorant_Garamond({
 });
 
 export const metadata = {
-  title: "Kaira Nails & Bakery",
+  title: "KV Nails",
   description: "A place for beauty and sweetness.",
 };
 

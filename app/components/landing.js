@@ -25,8 +25,8 @@ export default function Landing() {
               <h1 className="text-white text-2xl font-bold">
                 CERTIFIED + HOME BASED
               </h1>
-              <h1 className="text-white text-2xl font-bold">
-                YYC
+              <h1 className=" text-md font-bold bg-[#F2D3DE] text-black p-2 rounded uppercase">
+                Book now {'(Doesnt work yet)'}
               </h1>
             </div>
           </div>

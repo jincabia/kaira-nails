@@ -55,7 +55,7 @@ export default function Carousel() {
     <div className="relative w-11/12 mx-auto overflow-hidden pt-4  px-4  ">
       {/* Title */}
       <div className='text-black py-4 relative '>
-        <h1 className='text-black font-extrabold text-4xl  leading tight '>SHOWCASE</h1>
+        <h1 className='text-black font-extrabold text-4xl  leading tight '>MY WORK</h1>
         <p className='-mt-2'><a className='underline' href="https://www.instagram.com/nailsx.kv/">
         More at @nailsx.kv
           </a></p>

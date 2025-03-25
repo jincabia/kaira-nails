@@ -37,6 +37,7 @@ export default function Header() {
       >
         nailsx.kv
       </motion.h1>
+     
     </motion.div>
   );
 }

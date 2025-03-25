@@ -28,7 +28,7 @@ export default function Carousel() {
       if (screenWidth < 640) {
         setConstraint(-400 * (images.length - 1)); // Smaller constraint for mobile
       } else {
-        setConstraint(-350 * (images.length - 1)); // Larger constraint for desktop
+        setConstraint(-400 * (images.length - 1)); // Larger constraint for desktop
       }
     };
     updateConstraint();

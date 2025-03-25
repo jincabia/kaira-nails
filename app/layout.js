@@ -9,7 +9,7 @@ const cormorantGaramond = Cormorant_Garamond({
 
 export const metadata = {
   title: "KV Nails",
-  description: "A place for beauty and sweetness.",
+  description: "Nail Services",
 };
 
 export default function RootLayout({ children }) {

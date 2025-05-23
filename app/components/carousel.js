@@ -55,9 +55,9 @@ export default function Carousel() {
     <div className="relative w-11/12 mx-auto overflow-hidden pt-4  px-4  ">
       {/* Title */}
       <div className='text-black py-4 relative '>
-        <h1 className='text-black font-extrabold text-4xl  leading tight '>MY WORK</h1>
+        <h1 className='text-black font-extrabold text-4xl   '>MY WORK</h1>
         <p className='-mt-2'><a className='underline' href="https://www.instagram.com/nailsx.kv/">
-        More at @nailsx.kv
+        @nailsx.kv
           </a></p>
 
       </div>
@@ -74,7 +74,8 @@ export default function Carousel() {
             <div
 
 
-            className='w-full h-128 lg:h-128 lg:w-128 relative overflow-hidden my-4 ' //my-4 if you change this val change the transform value for the buttons since they effect one another
+            className='w-full h-128 lg:h-128 lg:w-128 relative overflow-hidden  my-4 ' 
+            //my-4 if you change this val change the transform value for the buttons since they effect one another
             >
               <Image
                 src={src}
@@ -91,10 +92,6 @@ export default function Carousel() {
           </motion.div>
         ))}
       </motion.div>
-
-      {/* Scroll Buttons */}
-      {/* <button onClick={scrollLeft} className="absolute  top-1/2 translate-y-8   bg-white p-2 rounded-full shadow-md">◀</button>
-      <button onClick={scrollRight} className="absolute right-0 top-1/2 translate-y-8  bg-white p-2 rounded-full shadow-md">▶</button> */}
 
       {/* Enlarged Image Modal */}
       {selectedImg && (

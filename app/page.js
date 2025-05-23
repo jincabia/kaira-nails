@@ -1,14 +1,35 @@
+'use client'
+import { useState, useEffect } from 'react';
+
 import Image from 'next/image'
 import Header from './components/header';
 import Landing from './components/landing';
 import Carousel from './components/carousel';
 import Services from './components/services';
+import BookNow from './components/booknow';
+
+import Policies from './components/policies';
 export default function Home() {
+
+  // const [schedules, setSchedules] = useState([]);
+
+  // useEffect(() => {
+  //   fetch('/api/schedules')
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log('Schedules:', data);
+  //     })
+  //     .catch((err) => {
+  //       console.error('Error fetching schedules:', err);
+  //     });
+  // }, []);
+  
+
   return (
     <main
       className="min-h-screen"
       style={
-        { backgroundColor: "#ffebfa",
+        { backgroundColor: "#F2D3DE",
          fontFamily: "var(--font-cormorant-garamond)" }
             } // Light Cream
     >
@@ -19,8 +40,11 @@ export default function Home() {
         <Carousel/>
       </div>
       <div>
-        {/* <Services/> */}
+        <Services/>
       </div>
+      {/* <BookNow/> */}
+      {/* <Schedules/> */}
+      <Policies/>
     </main>
   );
 }

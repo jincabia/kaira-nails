@@ -23,7 +23,7 @@ export default function Landing() {
           <div className="absolute inset-0 flex items-center justify-center text-center">
             <div>
               <h1 className="text-white text-2xl font-bold">
-                CERTIFIED + HOME BASED
+                CERTIFIED + YYC HOME BASED
               </h1>
               <h1 className=" text-md font-bold bg-[#F2D3DE] text-black p-2 rounded uppercase">
                 Book now {'(Doesnt work yet)'}

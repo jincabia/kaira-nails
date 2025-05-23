@@ -6,10 +6,11 @@ export default function Header() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
+    document.body.classList.add("overflow-y-hidden")
     const timeout = setTimeout(() => {
       setIsExpanded(true);
     }, 3000); // Adjust the delay as needed
-
+    document.body.classList.remove("overflow-y-hidden")
     return () => clearTimeout(timeout);
   }, []);
 
@@ -18,7 +19,7 @@ export default function Header() {
       initial={{ height: "100vh" }} // Start as full screen
       animate={{ height: isExpanded ? "100%" : "100vh" }} // Smoothly transition to full height
       transition={{ duration: 1.5, ease: "easeInOut" }} // Adjust timing
-      className="overflow-hidden w-full flex items-center justify-center bg-[#FFE2F8]"
+      className="overflow-hidden w-full flex items-center justify-center bg-[#FFE2F8] scroll"
     >
       {/* Closing and Retracting Black Screen */}
       <motion.div
